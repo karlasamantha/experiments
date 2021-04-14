@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UFT-8">
+    <title>Studying HTML fundamentals</title>
+    <style>
+      main {
+        text-align: center;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+
+      ul li {
+        margin-right: 4px;
+      }
+
+      #my-chart.bar {
+        height: 200px;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div>
+        <h1>Main title</h1>
+      </div>
+    </main>
+
+    <table class="charts-css bar multiple" id="my-chart">
+      <caption> 2016 Summer Olympics Medal Table </caption>
+    
+      <thead>
+        <tr>
+          <th scope="col"> Country </th>
+          <th scope="col"> Gold </th>
+          <th scope="col"> Silver </th>
+          <th scope="col"> Bronze </th>
+        </tr>
+      </thead>
+    
+      <tbody>
+        <tr>
+          <th scope="row"> USA </th>
+          <td> 46 </td>
+          <td> 37 </td>
+          <td> 38 </td>
+        </tr>
+
+        <tr>
+          <th scope="row"> GBR </th>
+          <td> 27 </td>
+          <td> 23 </td>
+          <td> 17 </td>
+        </tr>
+
+        <tr>
+          <th scope="row"> CHN </th>
+          <td> 26 </td>
+          <td> 18 </td>
+          <td> 26 </td>
+        </tr>
+      </tbody>
+    
+    </table>
+  </body>
+</html>
