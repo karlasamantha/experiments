@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparison Slider</title>
+  <link type="text/css" rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <h1>Experiment: Comparison slider</h1>
+
+    <div class="slider-container">
+      <div class="first-image">
+        <img src="./assets/photo01.jpeg" alt="Photo of Science World, in Vancouver, building during the day" />
+      </div>
+
+      <img src="./assets/photo2.jpeg" alt="Photo of Science World building, in Vancouver, during night-time" />
+
+      <input type="range" class="slider" />
+    </div>
+    <p>Images from Splash</p>
+  </main>
+  <script type="text/javascript">
+    const imageContainer = document.querySelector(".first-image");
+    const image = imageContainer.querySelector("img");
+    const range = document.querySelector(".slider");
+
+    range.oninput = function(e) {
+      imageContainer.style.width = this.value + "%";
+    }
+  </script>
+</body>
+</html>

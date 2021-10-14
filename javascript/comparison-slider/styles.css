@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-container {
+  display: inline-block;
+  position: relative;
+}
+
+.slider-container > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+.slider-container img {
+  display: block;
+}
+
+.slider-container input {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
