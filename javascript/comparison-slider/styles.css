@@ -19,10 +19,6 @@
   overflow: hidden;
 }
 
-.slider-container img {
-  display: block;
-}
-
 .slider-container input {
   position: absolute;
   top: 50%;
